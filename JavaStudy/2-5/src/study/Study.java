@@ -23,10 +23,10 @@ public class Study {
 
         // ① 定数を全て使って、String型のListを記述してください。
     	List<String> shohinList = new ArrayList<String>();
-    	shohinList.add("バナナ");
-    	shohinList.add("牛乳");
-    	shohinList.add("豚肉");
-    	shohinList.add("コロッケ");
+    	shohinList.add(SHOP_SHOHIN_00);
+    	shohinList.add(SHOP_SHOHIN_01);
+    	shohinList.add(SHOP_SHOHIN_02);
+    	shohinList.add(SHOP_SHOHIN_03);
 
         // ② 以下の「shopMap.put(shohinList.get(1), 180);」の処理について、コメントを記述してください。
         /*
@@ -41,9 +41,7 @@ public class Study {
 
         // ③ カリキュラムを参考に拡張for文を使って、課題の画像と同じ表示になるよう記述してください。
         // 「shohinList」と「shopMap」が保持する値を上手く利用しましょう。
-        //for (int i = 0; i < shopMap.size(); i++) {
-        	//System.out.println(shopMap.put(i));
-        //}
+       
         
         for (String f : shohinList) {
         	System.out.println(f + "=" + shopMap.get(f) + "円になります！");
