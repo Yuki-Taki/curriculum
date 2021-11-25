@@ -14,7 +14,9 @@
 　　②Switch3 E0/1
     ③Switch3 E0/2
       Switch3はルートブリッジ
+    ④Switch2 F0/2
+　　　Switch2とSwitch4の間のポートに何の役割もない
+　　　→ブリッジIDの小さいSwitch2側のポートがDPとなる
 
- BP:①Switch2 F0/2
-    ②Switch4 E0/1
+ BP:①Switch4 E0/1
 　　　RP.DPに選出されていない
