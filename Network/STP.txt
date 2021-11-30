@@ -15,8 +15,8 @@
     ③Switch3 E0/2
       Switch3はルートブリッジ
     ④Switch2 F0/2
-　　　Switch2とSwitch4の間のポートに何の役割もない
-　　　→ブリッジIDの小さいSwitch2側のポートがDPとなる
+　　　ルートパスコストを見ると、Switch2が送信するBPDUには38、Switch4が送信するBPDUには100が設定されている為、
+　　　Switch2のF0/2が指定ポートとなる
 
  BP:①Switch4 E0/1
 　　　RP.DPに選出されていない
