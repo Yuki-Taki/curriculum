@@ -2,9 +2,9 @@
  Switch3
 
 問２.
- RP:①Switch1 F0/2　　Switch1→Switch3　19
+ RP:①Switch1 F0/2　　Switch1→Switch3　100
       Switch2.4を経由するよりもルートパスコストが小さい
-　　②Switch2 F0/1　　Switch2→Switch1→Switch3  19+19=38
+　　②Switch2 F0/1　　Switch2→Switch1→Switch3  19+100=119
       Switch4を経由するよりもルートパスコストが小さい
 　　③Switch4 E0/2    Switch4→Switch3  100
 　　　Switch2.1を経由するよりもルートパスコストが小さい
@@ -14,9 +14,8 @@
 　　②Switch3 E0/1
     ③Switch3 E0/2
       Switch3はルートブリッジ
-    ④Switch2 F0/2
-　　　ルートパスコストを見ると、Switch2が送信するBPDUには38、Switch4が送信するBPDUには100が設定されている為、
-　　　Switch2のF0/2が指定ポートとなる
+    ④Switch4 E0/1
+　　　各コリジョンドメインに1つDPが必要な為、Switch2,4間ブリッジIDの小さいSwitch4側がなる
 
- BP:①Switch4 E0/1
+ BP:①Switch2 F0/2
 　　　RP.DPに選出されていない
